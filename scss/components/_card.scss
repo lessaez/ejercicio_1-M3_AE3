@@ -1,0 +1,13 @@
+.card {
+  background-color: $color-secundario;
+  border-radius: $radio-borde;
+  @include padding-base;
+
+  h3 {
+    color: $color-principal;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
