@@ -1,0 +1,43 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+// Componente reutilizable: Card
+.card {
+  background: white;
+  border-radius: $border-radius;
+  color: $color-text;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+
+  // usamos el mixin de padding
+  @include padding($spacing-md, $spacing-md);
+
+  // Anidación (elementos internos)
+  &__title {
+    font-size: 18px;
+    margin: 0 0 10px 0;
+  }
+
+  &__text {
+    margin: 0;
+    opacity: 0.85;
+  }
+
+  &__btn {
+    margin-top: 14px;
+    border: none;
+    background: $color-primary;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 14px;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+
+  // Responsive usando mixin
+  @include respond-md {
+    max-width: 520px;
+  }
+}

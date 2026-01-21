@@ -1,0 +1,12 @@
+// Mixin para padding reutilizable
+@mixin padding($vertical, $horizontal) {
+    padding: $vertical $horizontal;
+}
+
+// Mixin para media queries responsive
+@mixin respond-md {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+

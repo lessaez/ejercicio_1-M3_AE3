@@ -1,0 +1,20 @@
+// Abstracts (Variables y Mixins)
+@use "abstracts/variables";
+@use "abstracts/mixins";
+
+// Base (Estilos base del proyecto)
+@use "base/reset";
+@use "base/typography";
+
+// Loyout (Estructura General)
+@use "layout/header";
+@use "layout/footer";
+
+// Components (Componentes reutilizables)
+@use "components/card";
+
+// Pages (Estilos específicos de páginas)
+@use "pages/home";
+
+@use "components/button";
+
